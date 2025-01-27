@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Story = () => {
   // State to track dropdown toggle
@@ -46,24 +47,23 @@ const Story = () => {
       </h2>
 
       {/* Quote and Dropdowns */}
-      <div className="flex flex-col lg:flex-row gap-12">
+      <div className="flex flex-col justify-center items-center lg:flex-row gap-12">
         {/* Quote Section */}
         <div className="lg:w-1/2 bg-white shadow-xl p-10 rounded-lg transform hover:scale-105 transition-transform duration-300">
           <p className="text-2xl lg:text-3xl italic font-medium text-black">
             <span className="text-4xl lg:text-5xl text-[#F6A139]">"</span>
             What started as a small initiative to address learning gaps has grown into a pan-African movement. We’re driven by the belief that education is a fundamental right, not a privilege.
             <span className="text-4xl lg:text-5xl text-[#F6A139]">"</span>
+            <Link to='/' className=' text-[#f6a139] text-[20px] underline '>  Read More</Link>
           </p>
         </div>
 
-        {/* Dropdown Section */}
-        <div className="lg:w-1/2 space-y-6">
+       {/*  <div className="lg:w-1/2 space-y-6">
           {dropdownData.map((item, index) => (
             <div
               key={index}
               className="shadow-lg border border-gray-300 bg-white rounded-lg overflow-hidden"
             >
-              {/* Dropdown Header */}
               <button
                 onClick={() => handleToggle(index)}
                 className="w-full flex justify-between items-center p-6 text-lg font-semibold text-gray-800 bg-gray-50 hover:bg-gray-100 transition duration-200"
@@ -78,7 +78,6 @@ const Story = () => {
                 </span>
               </button>
 
-              {/* Dropdown Content */}
               {openDropdown === index && (
                 <ul className="p-6 border-t border-gray-200 text-gray-600 text-sm space-y-4">
                   {item.content.map((highlight, idx) => (
@@ -91,7 +90,7 @@ const Story = () => {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
