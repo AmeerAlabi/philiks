@@ -4,8 +4,12 @@ import icon1 from '../Assets/Images/icon1.png';
 import icon2 from '../Assets/Images/icon2.png';
 import icon3 from '../Assets/Images/icon3.png';
 import icon4 from '../Assets/Images/icon4.png';
+import { useNavigate, useNavigation } from 'react-router-dom';
+
 
 const Features = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="px-5 py-10 ">
       {/* Title */}
@@ -80,7 +84,9 @@ const Features = () => {
             <p className="text-[16px] md:text-[18px] text-gray-700">
               Students Reached
             </p>
-            <button className="px-6 py-2 bg-black text-white rounded-full shadow-lg hover:bg-[#F24C3D] transition duration-300">
+            <button  onClick={() =>
+                window.open('https://substack.com/@philikopportunities', '_blank')
+              } className="px-6 py-2 bg-black text-white rounded-full shadow-lg hover:bg-[#F24C3D] transition duration-300">
               Join Us
             </button>
           </div>

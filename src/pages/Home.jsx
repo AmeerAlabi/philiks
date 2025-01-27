@@ -11,6 +11,7 @@ import Tutors from '../components/Tutors'
 import Uni from '../components/Uni'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+import Events from '../components/Events'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
   <Tutors />
   <Features />
   <Vid />
-    <Dashboard />
+    {/* <Dashboard />
     <div className="my-[100px]">
     <Content />
     </div>
@@ -28,8 +29,9 @@ const Home = () => {
     <Collab />
     </div>
     <div className="my-[100px]">
-    <Learning />
-    </div>
+    <Learning /> */}
+    {/* </div> */}
+    <Events />
     <Plans />
     <Contact />
     <Footer />

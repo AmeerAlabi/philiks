@@ -15,7 +15,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="my-12 mx-auto px-5 w-[85%] flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
+    <div className="my-12 py-[30px] mx-auto px-5 w-[85%] flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
       {/* Heading */}
       <h1 className="text-[36px] md:text-[70px] font-semibold text-black text-center md:text-left">
         Do you have questions? <br />
@@ -62,7 +62,7 @@ const Contact = () => {
         <button
           type="submit"
           disabled={state.submitting}
-          className="w-full h-[50px] bg-[black] text-white font-semibold rounded-full hover:bg-[#0056b3] transition"
+          className="w-full h-[50px] bg-[#F6A139] text-white font-semibold rounded-full hover:bg-[#000] transition"
         >
           Submit
         </button>

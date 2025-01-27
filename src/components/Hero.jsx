@@ -26,7 +26,9 @@ const Hero = () => {
           <p className="text-[14px] md:text-[16px] font-medium text-[#737373] mt-4">
             Join a program designed to help students excel academically while pursuing what they love.
           </p>
-          <button className="text-white bg-black w-[120px] h-[45px] rounded-full mt-[10px] hover:bg-[#22A699] transition duration-300">
+          <button  onClick={() =>
+                window.open('https://substack.com/@philikopportunities', '_blank')
+              } className="text-white bg-black w-[120px] h-[45px] rounded-full mt-[10px] hover:bg-[#22A699] transition duration-300">
             Get Started
           </button>
         </div>

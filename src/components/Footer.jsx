@@ -19,11 +19,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Logo and About Section */}
           <div className="space-y-4">
-            <Link to="/" className="block mb-6">
+            <Link to="/" className="block mb-2">
               <img
                 src={logo}
                 alt="Philik Opportunities Logo"
-                className="w-48 hover:opacity-90 transition-opacity"
+                className="w-52 hover:opacity-90 transition-opacity"
               />
             </Link>
             <p className="text-gray-600 max-w-sm">
