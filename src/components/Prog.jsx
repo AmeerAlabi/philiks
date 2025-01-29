@@ -1,59 +1,62 @@
 import React from 'react';
 import Card from './Card';
-import crd1 from '../Assets/Images/crd1.png';
+import crd1 from '../Assets/Images/plk.jpg';
+import crd2 from '../Assets/Images/hgh1.jpg';
+import crd3 from '../Assets/Images/undg.jpg';
+import crd4 from '../Assets/Images/prf2.jpeg';
 
 const Prog = () => {
   const cards = [
     {
-      title: 'Tech Next Scholarships',
+      title: 'Webinar Series',
       description:
-        'Scholarships and resources for students in underrepresented communities, enabling access to cutting-edge tech education.',
+        'Engaging sessions led by industry experts, covering critical topics like career development, skill-building, and personal growth. Designed to help students and professionals stay ahead in an evolving world.',
       image: crd1,
       features: [
-        'Tech career readiness.',
-        'Networking opportunities',
-        'Live Q&A sessions',
+        'Live expert sessions',
+        'Career & academic guidance',
+        'Interactive Q&A and networking',
       ],
     },
     {
-      title: 'Bridge to Excellence Workshops',
+      title: 'Philik High School Program',
       description:
-        'Scholarships and resources for students in underrepresented communities, enabling access to cutting-edge tech education.',
-      image: crd1,
+        'A dedicated initiative to equip high school students in Nigeria with career guidance, foundational skills, and mentorship. This digital platform aims to impact 10,000+ students in its first year, bridging the gap between secondary education and future opportunities.',
+      image: crd2,
       features: [
-        'Bridge to Excellence Workshops',
-        'Networking opportunities',
-        'Live Q&A sessions',
+        'Career exploration tools',
+        'Mentorship from industry experts',
+        'Foundational skill-building modules',
       ],
     },
     {
-      title: 'Global Classroom Initiative',
+      title: 'Philik Campus Initiative (Launching Q2 2026)',
       description:
-        'Scholarships and resources for students in underrepresented communities, enabling access to cutting-edge tech education.',
-      image: crd1,
+        'Expanding Philik’s reach to undergraduate institutions, this program will empower students with real-world skills like project management, critical thinking, and digital proficiency. By partnering with universities, we aim to establish a strong presence in 15+ institutions by the end of 2026.',
+      image: crd3,
       features: [
-        'Bridge to Excellence Workshops',
-        'Networking opportunities',
-        'Live Q&A sessions',
+        'Hands-on leadership training',
+        'Practical industry-relevant workshops',
+        'University partnerships for skill development',
       ],
     },
     {
-      title: 'Affordable Learning Packs',
+      title: 'Professional Solutions Suite (Launching Q4 2027)',
       description:
-        'Scholarships and resources for students in underrepresented communities, enabling access to cutting-edge tech education.',
-      image: crd1,
+        'A comprehensive career advancement program designed for professionals, featuring industry-specific training, leadership workshops, and an AI-powered career advisory platform. Targeting 50,000+ professionals in its first year, this suite will redefine workplace productivity and career growth.',
+      image: crd4,
       features: [
-        'Bridge to Excellence Workshops',
-        'Networking opportunities',
-        'Live Q&A sessions',
+        'AI-powered career advisory',
+        'Industry-specific skill training',
+        'Leadership & executive coaching',
       ],
     },
   ];
 
   return (
-    <div className="p-6  min-h-screen">
+    <div className="p-6 min-h-screen">
       {/* Section Title */}
-      <h2 className="md:text-4xl text-3xl font-bold  bg-clip-text md:text-left text-center  text-black mb-4 md:mb-8 p-3">
+      <h2 className="md:text-4xl text-3xl font-bold bg-clip-text md:text-left text-center text-black mb-4 md:mb-8 p-3">
         Programs
       </h2>
 

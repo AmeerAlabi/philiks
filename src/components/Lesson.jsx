@@ -1,73 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link to create internal routing links
 import LessonCard from './LessonCard';
-import lessonImage1 from '../Assets/Images/lessons.png';
-
+import lessonImage1 from '../Assets/Images/plk.jpg';
 
 const Lessons = () => {
   // Array of card data
   const lessons = [
     {
       image: lessonImage1,
-      title: 'Data-Driven Decision-Making for Beginners',
+      title: 'Time Management Strategies:',
       buttonText: 'View',
-      isButtonDisabled: true,
+      link: '', // The link for this lesson's detail page
+      isButtonDisabled: false,
     },
     {
       image: lessonImage1,
-      title: 'Mastering Python for Data Science',
+      title: 'Understanding Balance',
       buttonText: 'View',
-      isButtonDisabled: true,
+      link: '', // The link for this lesson's detail page
+      isButtonDisabled: false,
     },
-    {
-      image: lessonImage1,
-      title: 'Introduction to Machine Learning',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
-    {
-      image: lessonImage1,
-      title: 'Web Development Essentials',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
-    {
-      image: lessonImage1,
-      title: 'Cybersecurity Fundamentals',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
-    {
-      image: lessonImage1,
-      title: 'AI and Robotics Basics',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
-    {
-      image: lessonImage1,
-      title: 'Cloud Computing for Beginners',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
-    {
-      image: lessonImage1,
-      title: 'Blockchain and Cryptocurrency',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
-    {
-      image: lessonImage1,
-      title: 'Creative Coding with JavaScript',
-      buttonText: 'View',
-      isButtonDisabled: true,
-    },
+    // Add more lesson cards here as needed
   ];
 
   return (
-    <div className="p-[30px] mb-[100px]  min-h-screen">
-      <h2 className="text-4xl font-bold  text-black mb-8 ">
+    <div className="p-[30px] mb-[100px] min-h-screen">
+      <h2 className="text-4xl font-bold text-black mb-8">
         Lessons
       </h2>
 
+      {/* Lesson Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         {lessons.map((lesson, index) => (
           <LessonCard
@@ -76,9 +38,20 @@ const Lessons = () => {
             title={lesson.title}
             buttonText={lesson.buttonText}
             isButtonDisabled={lesson.isButtonDisabled}
+            link={lesson.link} 
           />
         ))}
       </div>
+
+      {/* Learn More Button */}
+      {/* <div className="mt-10 text-center">
+        <a
+          href="/all-lessons"  // Modify this if you need a different link for all lessons
+          className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-800 transition"
+        >
+          See All Lessons
+        </a>
+      </div> */}
     </div>
   );
 };

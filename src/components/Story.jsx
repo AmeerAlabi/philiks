@@ -52,9 +52,9 @@ const Story = () => {
         <div className="lg:w-1/2 bg-white shadow-xl p-10 rounded-lg transform hover:scale-105 transition-transform duration-300">
           <p className="text-2xl lg:text-3xl italic font-medium text-black">
             <span className="text-4xl lg:text-5xl text-[#F6A139]">"</span>
-            What started as a small initiative to address learning gaps has grown into a pan-African movement. We’re driven by the belief that education is a fundamental right, not a privilege.
+            At Philik, we believe that education and career development should be more than just a journey—they should be an experience that equips individuals with the skills, knowledge, and mindset to thrive in an ever-evolving world.
             <span className="text-4xl lg:text-5xl text-[#F6A139]">"</span>
-            <Link to='/' className=' text-[#f6a139] text-[20px] underline '>  Read More</Link>
+            <Link to='https://open.substack.com/pub/philikopportunities/p/you-can?utm_source=share&utm_medium=android&r=18kszm' className=' text-[#f6a139] text-[20px] underline '>  Read More</Link>
           </p>
         </div>
 

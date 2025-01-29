@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mission = () => {
   return (
-    <div className="min-h-screen mt-[80px]">
+    <div className=" mt-[20px]">
       {/* Title */}
       <h2 className="text-center px-[30px] mb-[20px] sm:text-left bg-gradient-to-r from-[#000] to-[#F6A139] text-transparent bg-clip-text text-3xl sm:text-4xl md:text-5xl font-bold leading-tight md:leading-[70px]">
         Our Mission And Vision

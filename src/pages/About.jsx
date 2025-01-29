@@ -5,6 +5,7 @@ import Story from '../components/Story'
 import Mission from '../components/Mission'
 import Team from '../components/Team'
 import Footer from '../components/Footer'
+import FAQReviewSection from '../components/Faq'
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
       <Vid />
       <Story />
       <Mission />
+      <FAQReviewSection />
       <Team />
       <Footer/>
       </div>

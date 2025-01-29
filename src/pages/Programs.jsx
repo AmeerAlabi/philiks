@@ -4,6 +4,7 @@ import Lesson from '../components/Lesson'
 import Prog from '../components/Prog'
 import Lessons from '../components/Lesson'
 import Footer from '../components/Footer'
+import FAQReviewSection from '../components/Faq'
 
 const Programs = () => {
   return (
