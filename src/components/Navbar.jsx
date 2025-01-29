@@ -11,7 +11,7 @@ const Navbar = () => {
       <img src={logo} alt="" className=" w-[60px] h-[60px] " />
 
       {/* Navigation Links */}
-      <div className={`hidden md:flex w-[400px] px-[10px] h-[63px] rounded-full py-2 justify-center items-center gap-5 bg-[#FDECD8]`}>
+      <div className={`hidden md:flex w-[480px] px-[30px] h-[63px] rounded-full py-2 justify-center items-center gap-5 bg-[#FDECD8]`}>
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -36,6 +36,14 @@ const Navbar = () => {
           }
         >
           About
+        </NavLink>
+        <NavLink
+          to="/team"
+          className={({ isActive }) =>
+            `text-lg font-bold px-4 py-2 rounded-full ${isActive ? 'bg-white text-black' : 'text-black'} hover:bg-gray-200 hover:scale-105 transition duration-300`
+          }
+        >
+          Team
         </NavLink>
     
       </div>
@@ -105,8 +113,18 @@ const Navbar = () => {
           >
             About
           </NavLink>
+
+          <NavLink
+            to="/team"
+            className={({ isActive }) =>
+              `py-2 my-[10px] text-lg font-bold w-[250px] rounded-full text-center ${isActive ? 'bg-[#FDECD8] text-black' : 'text-black'} hover:bg-gray-200 hover:scale-105 transition duration-300`
+            }
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Team
+          </NavLink>
           
-          <button className="w-[90%] my-[10px] py-3 rounded-full border border-black text-sm font-medium hover:bg-gray-100 hover:scale-105 transition duration-300">
+          <button className="w-[90%] my-[1px] py-3 rounded-full border border-black text-sm font-medium hover:bg-gray-100 hover:scale-105 transition duration-300">
             Reach Out
           </button>
           <button className="w-[90%]  my-[10px] py-3 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 hover:scale-105 transition duration-300">

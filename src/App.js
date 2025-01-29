@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import React from 'react';
 import Contact from './components/Contact';
+import ScrollToTop from './components/Scroll';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
+      <ScrollToTop />
       {/* <Footer /> */}
     </Router>
   );

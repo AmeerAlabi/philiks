@@ -30,7 +30,7 @@ const Prog = () => {
       ],
     },
     {
-      title: 'Philik Campus Initiative (Launching Q2 2026)',
+      title: 'Philik Campus Initiative ',
       description:
         'Expanding Philik’s reach to undergraduate institutions, this program will empower students with real-world skills like project management, critical thinking, and digital proficiency. By partnering with universities, we aim to establish a strong presence in 15+ institutions by the end of 2026.',
       image: crd3,
@@ -41,7 +41,7 @@ const Prog = () => {
       ],
     },
     {
-      title: 'Professional Solutions Suite (Launching Q4 2027)',
+      title: 'Professional Solutions Suite',
       description:
         'A comprehensive career advancement program designed for professionals, featuring industry-specific training, leadership workshops, and an AI-powered career advisory platform. Targeting 50,000+ professionals in its first year, this suite will redefine workplace productivity and career growth.',
       image: crd4,

@@ -1,9 +1,12 @@
 import React from 'react'
+import TeamMembers from '../components/Team'
+import Footer from '../components/Footer'
 
 const Team = () => {
   return (
     <div>
-      <h1 className="">Hello Team </h1>
+      <TeamMembers />
+      <Footer />
     </div>
   )
 }
