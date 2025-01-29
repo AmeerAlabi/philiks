@@ -12,6 +12,7 @@ import Uni from '../components/Uni'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Events from '../components/Events'
+import Newsletter from '../components/Newsletter'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
   <Uni />
   <Tutors />
   <Features />
+  <Newsletter />
   <Vid />
     {/* <Dashboard />
     <div className="my-[100px]">

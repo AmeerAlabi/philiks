@@ -1,49 +1,38 @@
 import React from "react";
-import  img1 from '../Assets/Images/img1.jpg'
-import  img2 from '../Assets/Images/img2.jpg'
-import  img3 from '../Assets/Images/img3.jpg'
+import img1 from "../Assets/Images/phl1.jpg";
+import img2 from "../Assets/Images/phl2.jpg";
+import img3 from "../Assets/Images/phl3.jpg";
 
 const Events = () => {
-  // Example data
-  const upcomingEvents = [
-    {
-      id: 1,
-      title: "Web Development Workshop",
-      date: "February 10, 2025",
-      location: "Online (Zoom)",
-      description: "Learn the basics of web development and get hands-on experience.",
-      link: "https://youtube.com/event-link-1", // Example YouTube link
-      flyer: img1, // Example flyer URL
-    },
-    {
-      id: 2,
-      title: "Career Fair 2025",
-      date: "March 5, 2025",
-      location: "Lagos, Nigeria",
-      description: "Meet top employers and explore career opportunities.",
-      link: "https://example.com/event-link-2", // Example external link
-      flyer: img2, // Example flyer URL
-    },
-  ];
+  const upcomingEvents = []; // No upcoming events
 
   const pastEvents = [
     {
       id: 1,
-      title: "Startup Pitch Competition",
-      date: "December 15, 2024",
-      location: "Abuja, Nigeria",
-      description: "Innovative startups pitched their ideas to a panel of experts.",
-      link: "https://youtube.com/event-recap-1", // Example YouTube recap link
-      flyer: img3, // Example flyer URL
+      title: "Introduction to Philik",
+      date: "January 27, 2024",
+      location: "Remote(Zoom)",
+      description: "Showcase how Philik connects students to opportunities that align with their goals.",
+      link: "https://youtube.com/event-recap-1",
+      flyer: img1,
     },
     {
       id: 2,
-      title: "Philik Meetup 2024",
-      date: "November 20, 2024",
-      location: "Lagos, Nigeria",
-      description: "Networking event for professionals and enthusiasts.",
-      link: "https://example.com/event-recap-2", // Example external recap link
-      flyer: img1, // Example flyer URL
+      title: "Understanding Balance",
+      date: "January 28, 2024",
+      location: "Remote(Zoom)",
+      description: "Introduce the importance of balancing both aspects for holistic development.",
+      link: "https://youtube.com/event-recap-1",
+      flyer: img2,
+    },
+    {
+      id: 3,
+      title: "Time Management Strategies",
+      date: "January 29, 2024",
+      location: "Remote(Zoom)",
+      description: "Teach practical time-management techniques, including prioritization, planning, and goal-setting.",
+      link: "https://example.com/event-recap-2",
+      flyer: img3,
     },
   ];
 
@@ -61,44 +50,55 @@ const Events = () => {
         {/* Upcoming Events */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold mb-6">Upcoming Events</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {upcomingEvents.map((event) => (
-              <div
-                key={event.id}
-                className="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition"
-              >
-                {/* Flyer */}
-                <img
-                  src={event.flyer}
-                  alt={`${event.title} Flyer`}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h4 className="text-xl font-semibold mb-2">{event.title}</h4>
-                <p className="text-gray-500 text-sm mb-1">
-                  📅 {event.date}
-                </p>
-                <p className="text-gray-500 text-sm mb-4">
-                  📍 {event.location}
-                </p>
-                <p className="text-gray-700 mb-4">{event.description}</p>
-                {/* Event Link */}
-                <a
-                  href={event.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 underline hover:text-blue-800"
+          {upcomingEvents.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {upcomingEvents.map((event) => (
+                <div
+                  key={event.id}
+                  className="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition"
                 >
-                  View Event Details
-                </a>
-                {/* Dynamic Button */}
-                <div className="mt-4">
-                  <button className="px-4 py-2 bg-[#F6A139] text-white rounded-lg hover:bg-[#000] transition">
-                    Register Now
-                  </button>
+                  <img
+                    src={event.flyer}
+                    alt={`${event.title} Flyer`}
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h4 className="text-xl font-semibold mb-2">{event.title}</h4>
+                  <p className="text-gray-500 text-sm mb-1">📅 {event.date}</p>
+                  <p className="text-gray-500 text-sm mb-4">📍 {event.location}</p>
+                  <p className="text-gray-700 mb-4">{event.description}</p>
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800"
+                  >
+                    View Event Details
+                  </a>
+                  <div className="mt-4">
+                    <button className="px-4 py-2 bg-[#F6A139] text-white rounded-lg hover:bg-[#000] transition">
+                      Register Now
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            // No Upcoming Events Message
+            <div className="text-center md:mx-auto md:w-[800px] bg-white p-8 rounded-xl shadow-lg">
+              <h4 className="text-xl font-semibold text-gray-800 mb-2">🎉 Stay Tuned!</h4>
+              <p className="text-gray-600 mb-4">
+                No upcoming events at the moment. Be the first to know when new events drop!
+              </p>
+              <a
+                href="https://philikopportunities.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-[#F6A139] text-white rounded-lg hover:bg-[#000] transition duration-300"
+              >
+                Join Our Newsletter
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Past Events */}
@@ -110,21 +110,15 @@ const Events = () => {
                 key={event.id}
                 className="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition"
               >
-                {/* Flyer */}
                 <img
                   src={event.flyer}
                   alt={`${event.title} Flyer`}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <h4 className="text-xl font-semibold mb-2">{event.title}</h4>
-                <p className="text-gray-500 text-sm mb-1">
-                  📅 {event.date}
-                </p>
-                <p className="text-gray-500 text-sm mb-4">
-                  📍 {event.location}
-                </p>
+                <p className="text-gray-500 text-sm mb-1">📅 {event.date}</p>
+                <p className="text-gray-500 text-sm mb-4">📍 {event.location}</p>
                 <p className="text-gray-700 mb-4">{event.description}</p>
-                {/* Event Link */}
                 <a
                   href={event.link}
                   target="_blank"

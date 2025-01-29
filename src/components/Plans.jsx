@@ -45,30 +45,30 @@ const Plans = () => {
           {/* Statistic 1 */}
           <div className="text-center">
             <h1 className="text-[48px] md:text-[72px] font-bold text-white">
-              {inView && <CountUp end={250} duration={3} /> }+
+              {inView && <CountUp end={500} duration={3} /> }+
             </h1>
             <span className="font-normal text-[14px] md:text-[18px] text-white opacity-80">
-              Universities Reached
+         persons reached
             </span>
           </div>
 
           {/* Statistic 2 */}
           <div className="text-center">
             <h1 className="text-[48px] md:text-[72px] font-bold text-white">
-              {inView && <CountUp end={10000} duration={3} separator="," /> }+
+              {inView && <CountUp end={100} duration={3} separator="," /> }+
             </h1>
             <span className="font-normal text-[14px] md:text-[18px] text-white opacity-80">
-              Active Users
+            Registered individuals
             </span>
           </div>
 
           {/* Statistic 3 */}
           <div className="text-center">
             <h1 className="text-[48px] md:text-[72px] font-bold text-white">
-              {inView && <CountUp end={15000} duration={3} separator="," /> }+
+              {inView && <CountUp end={200} duration={3} separator="," /> }+
             </h1>
             <span className="font-normal text-[14px] md:text-[18px] text-white opacity-80">
-              Hours of Content Delivered
+            mins content delivered
             </span>
           </div>
         </div>

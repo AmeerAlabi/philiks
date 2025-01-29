@@ -1,63 +1,49 @@
 import React from 'react';
-import icon1 from '../Assets/Images/uni1.png';
-import icon2 from '../Assets/Images/uni2.png';
-import icon3 from '../Assets/Images/uni3.png';
+import icon1 from '../Assets/Images/ngm1.png';
+import icon2 from '../Assets/Images/ngm2.png';
+import icon3 from '../Assets/Images/mission.png';
+import icon4 from '../Assets/Images/ace.png';
 
 const Uni = () => {
   return (
-    <div className=" py-10">
+    <div className="py-16 bg-gray-100">
+      <h1 className="text-center text-[32px] md:text-[48px] font-bold text-[#333]">
+        Our Partners
+      </h1>
+      
       {/* Marquee Container */}
-      <div className="overflow-hidden relative h-[120px]">
+      <div className="relative overflow-hidden mt-8">
         <div className="marquee flex items-center gap-10">
-          {/* Icon 1 */}
-          <img
-            src={icon1}
-            alt="Icon 1"
-            className="w-[100px] h-[100px] object-contain"
-          />
-          {/* Icon 2 */}
-          <img
-            src={icon2}
-            alt="Icon 2"
-            className="w-[100px] h-[100px] object-contain"
-          />
-          {/* Icon 3 */}
-          <img
-            src={icon3}
-            alt="Icon 3"
-            className="w-[100px] h-[100px] object-contain"
-          />
-          {/* Duplicate icons for seamless scrolling */}
-          <img
-            src={icon1}
-            alt="Icon 1"
-            className="w-[100px] h-[100px] object-contain"
-          />
-          <img
-            src={icon2}
-            alt="Icon 2"
-            className="w-[100px] h-[100px] object-contain"
-          />
-          <img
-            src={icon3}
-            alt="Icon 3"
-            className="w-[100px] h-[100px] object-contain"
-          />
+          {/* Logos with Optional Links */}
+          <a href="https://ngmplatform.com/" target="_blank" rel="noopener noreferrer">
+            <img src={icon1} alt="Partner 1" className="w-[150px] h-[150px] object-contain transition-transform hover:scale-110" />
+          </a>
+          <a href="https://ngmplatform.com/" target="_blank" rel="noopener noreferrer">
+            <img src={icon2} alt="Partner 2" className="w-[150px] h-[150px] object-contain transition-transform hover:scale-110" />
+          </a>
+          <a href="https://ng.linkedin.com/company/mission-brain-at-university-of-ilorin" target="_blank" rel="noopener noreferrer">
+            <img src={icon3} alt="Partner 3" className="w-[120px] h-[120px] object-contain transition-transform hover:scale-110" />
+          </a>
+          <a href="https://acemyx.com/" target="_blank" rel="noopener noreferrer">
+            <img src={icon4} alt="Partner 4" className="w-[120px] h-[120px] object-contain transition-transform hover:scale-110" />
+          </a>
         </div>
       </div>
 
-      {/* Style */}
+      {/* Marquee Animation */}
       <style jsx>{`
         .marquee {
-          animation: scroll 10s linear infinite;
+          display: flex;
+          white-space: nowrap;
+          animation: scroll 12s linear infinite;
         }
 
         @keyframes scroll {
-          0% {
-            transform: translateX(0);
+          from {
+            transform: translateX(100%);
           }
-          100% {
-            transform: translateX(-50%);
+          to {
+            transform: translateX(-100%);
           }
         }
       `}</style>

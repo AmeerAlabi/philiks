@@ -5,7 +5,7 @@ import pic2 from '../Assets/Images/hero-2.png';
 
 const Hero = () => {
   return (
-    <div className="mt-[20px] flex flex-col lg:flex-row gap-[20px] p-5 items-center lg:items-start">
+    <div className=" mt-[5px] md:mt-[20px] flex flex-col lg:flex-row gap-[20px] p-5 items-center lg:items-start">
       {/* 1st Section */}
       <div className="w-full lg:w-[551px] flex flex-col p-5">
         {/* Tagline */}
@@ -14,13 +14,14 @@ const Hero = () => {
             New
           </div>
           <div className="flex gap-[5px] items-center">
-            <p className="text-black text-[12px]">Time Management Courses Uploaded</p>
+            <p className="text-black font-[500] text-[14px]"> Introduction to Philik uploaded 
+            </p>
             <FaArrowRight />
           </div>
         </div>
         {/* Heading and Description */}
-        <div className="mt-5">
-          <h1 className="text-[32px] md:text-[40px] lg:text-[54px] font-bold text-black">
+        <div className=" mt-[2px] md:mt-5  ">
+          <h1 className="text-[36px] md:text-[40px] lg:text-[54px] font-bold text-black">
             Balance Academics. Amplify Passions.
           </h1>
           <p className="text-[14px] md:text-[16px] font-medium text-[#737373] mt-4">
@@ -28,8 +29,8 @@ const Hero = () => {
           </p>
           <button  onClick={() =>
                 window.open('https://substack.com/@philikopportunities', '_blank')
-              } className="text-white bg-black w-[120px] h-[45px] rounded-full mt-[10px] hover:bg-[#22A699] transition duration-300">
-            Get Started
+              } className="text-white md:mt-[20px] font-[500] bg-black md:w-[240px] w-[220px] h-[45px] rounded-full mt-[20px] hover:bg-[#22A699] transition duration-300">
+            Join Our Community
           </button>
         </div>
       </div>

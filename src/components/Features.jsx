@@ -34,20 +34,22 @@ const Features = () => {
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <img src={icon1} alt="Smart Learning Tools" className="w-[80px] h-[80px]" />
               <h1 className="text-[24px] md:text-[28px] font-bold mt-4 text-[#222]">
-                Smart Learning Tools
+              Opportunity Awareness:
+
+
               </h1>
               <p className="text-[16px] md:text-[18px] text-gray-700 mt-2">
-                Seamlessly access our innovative digital resources designed to simplify and enhance the learning process.
+              To identify and promote opportunities in education, leadership, and personal development that support balanced growth.
               </p>
             </div>
             {/* Card 2 */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <img src={icon2} alt="Personalized Learning" className="w-[80px] h-[80px]" />
               <h1 className="text-[24px] md:text-[28px] font-bold mt-4 text-[#222]">
-                Personalized Learning
+              Community Building:
               </h1>
               <p className="text-[16px] md:text-[18px] text-gray-700 mt-2">
-                Leverage AI-driven insights to customize study plans, ensuring every student thrives at their own pace.
+              To establish a network of like-minded individuals who share experiences, support one another, and grow together in achieving balance and excellence.
               </p>
             </div>
           </div>
@@ -58,26 +60,26 @@ const Features = () => {
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <img src={icon3} alt="Comprehensive Content" className="w-[80px] h-[80px]" />
               <h1 className="text-[24px] md:text-[28px] font-bold mt-4 text-[#222]">
-                Comprehensive Content
+              Educational Empowerment:
               </h1>
               <p className="text-[16px] md:text-[18px] text-gray-700 mt-2">
-                Explore an extensive library of expertly curated materials tailored to diverse academic needs and goals.
+              To create resources, workshops, and training programs that teach individuals how to manage time effectively, prioritize tasks, and integrate extracurricular activities with academic excellence.
               </p>
             </div>
             {/* Card 4 */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <img src={icon4} alt="Real-Time Tracking" className="w-[80px] h-[80px]" />
               <h1 className="text-[24px] md:text-[28px] font-bold mt-4 text-[#222]">
-                Real-Time Tracking
+              Research and Insights:
               </h1>
               <p className="text-[16px] md:text-[18px] text-gray-700 mt-2">
-                Monitor growth and stay ahead with intuitive dashboards that keep students and mentors aligned.
+              To conduct surveys and studies that explore the challenges students face in achieving balance and to use findings to create targeted solutions.
               </p>
             </div>
           </div>
 
           {/* Footer Section */}
-          <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
+          {/* <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
             <h1 className="text-[36px] md:text-[48px] font-bold text-black">
               250+
             </h1>
@@ -89,7 +91,7 @@ const Features = () => {
               } className="px-6 py-2 bg-black text-white rounded-full shadow-lg hover:bg-[#F24C3D] transition duration-300">
               Join Us
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
