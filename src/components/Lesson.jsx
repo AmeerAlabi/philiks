@@ -2,19 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';  // Import Link to create internal routing links
 import LessonCard from './LessonCard';
 import lessonImage1 from '../Assets/Images/plk.jpg';
+import lessonImage2 from '../Assets/Images/tm.png';
+import lessonImage3 from '../Assets/Images/ub.png';
 
 const Lessons = () => {
   // Array of card data
   const lessons = [
     {
-      image: lessonImage1,
+      image: lessonImage2,
       title: 'Time Management Strategies:',
       buttonText: 'View',
       link: 'https://www.youtube.com/watch?v=HmF_WYl1pQ8', // The link for this lesson's detail page
       isButtonDisabled: false,
     },
     {
-      image: lessonImage1,
+      image: lessonImage3,
       title: 'Understanding Balance',
       buttonText: 'View',
       link: 'https://www.youtube.com/watch?v=HmF_WYl1pQ8', // The link for this lesson's detail page
