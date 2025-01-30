@@ -30,7 +30,7 @@ const Prog = () => {
       ],
     },
     {
-      title: 'Philik Campus Initiative ',
+      title: 'Philik Campus Initiative',
       description:
         'Expanding Philik’s reach to undergraduate institutions, this program will empower students with real-world skills like project management, critical thinking, and digital proficiency. By partnering with universities, we aim to establish a strong presence in 15+ institutions by the end of 2026.',
       image: crd3,
@@ -39,6 +39,7 @@ const Prog = () => {
         'Practical industry-relevant workshops',
         'University partnerships for skill development',
       ],
+      comingSoon: true, // Flag for "Coming Soon" badge
     },
     {
       title: 'Professional Solutions Suite',
@@ -50,6 +51,7 @@ const Prog = () => {
         'Industry-specific skill training',
         'Leadership & executive coaching',
       ],
+      comingSoon: true, // Flag for "Coming Soon" badge
     },
   ];
 
@@ -63,13 +65,20 @@ const Prog = () => {
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-[40px]">
         {cards.map((card, index) => (
-          <Card
-            key={index}
-            title={card.title}
-            description={card.description}
-            image={card.image}
-            features={card.features}
-          />
+          <div key={index} className="relative">
+            {/* "Coming Soon" Badge */}
+            {card.comingSoon && (
+              <div className="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Coming Soon
+              </div>
+            )}
+            <Card
+              title={card.title}
+              description={card.description}
+              image={card.image}
+              features={card.features}
+            />
+          </div>
         ))}
       </div>
     </div>
