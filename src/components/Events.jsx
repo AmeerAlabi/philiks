@@ -13,7 +13,7 @@ const Events = () => {
       date: "January 27, 2024",
       location: "Remote(Zoom)",
       description: "Showcase how Philik connects students to opportunities that align with their goals.",
-      link: "https://www.youtube.com/@Philikopportunnites",
+      link: "https://www.youtube.com/watch?v=HmF_WYl1pQ8&t=13s",
       flyer: img1,
     },
     {
