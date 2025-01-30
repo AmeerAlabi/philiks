@@ -2,10 +2,17 @@ import React from 'react';
 import LessonCard from './LessonCard';
 import lessonImage2 from '../Assets/Images/tm.png';
 import lessonImage3 from '../Assets/Images/ub.png';
+import lessonImage1 from '../Assets/Images/mm.png';
 
 const Lessons = () => {
   // Array of lesson data
   const lessons = [
+    {
+      image: lessonImage1,
+      title: 'Introduction to Philik',
+      buttonText: 'View',
+      link: 'https://www.youtube.com/watch?v=HmF_WYl1pQ8&t=13s', // Correct external link
+    },
     {
       image: lessonImage2,
       title: 'Time Management Strategies',
