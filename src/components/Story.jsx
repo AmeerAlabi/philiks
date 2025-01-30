@@ -54,7 +54,7 @@ const Story = () => {
             <span className="text-4xl lg:text-5xl text-[#F6A139]">"</span>
             At Philik, we believe that education and career development should be more than just a journey—they should be an experience that equips individuals with the skills, knowledge, and mindset to thrive in an ever-evolving world.
             <span className="text-4xl lg:text-5xl text-[#F6A139]">"</span>
-            <Link to='https://open.substack.com/pub/philikopportunities/p/you-can?' className=' text-[#f6a139] text-[20px] underline '>  Read More</Link>
+            <Link to='https://substack.com/home/post/p-156081858' className=' text-[#f6a139] text-[20px] underline '>  Read More</Link>
           </p>
         </div>
 

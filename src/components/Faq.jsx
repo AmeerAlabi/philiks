@@ -31,20 +31,34 @@ const FAQReviewSection = () => {
   // Review Data
   const reviews = [
     {
-      name: "Sarah O.",
-      text: "Philik completely transformed my career path. Their mentorship program gave me the guidance I needed!",
+      name: "Amzat Abdulrahman Olalekan",
+      level: "100L",
+      school: "Optometry, Unilorin",
+      text: "Being part of Philik has been an eye-opener. The time management session by Dr. Ridwan came at the perfect time for me—I was struggling to balance my JAMB preparation, first-semester exams, and graphic design practice. Now, I have clear strategies to help me manage my time better. I’m grateful for this opportunity!",
     },
     {
-      name: "John A.",
-      text: "The webinars are incredibly insightful! Every session is packed with valuable knowledge.",
+      name: "Saka Habibat",
+      level: "400L",
+      school: "Medicine, Unilorin",
+      text: "The Philik Team did an amazing job with its facilitator choices. I gained so much from the webinar, and I’m looking forward to implementing what I’ve learned. Thank you for creating this platform!",
     },
     {
-      name: "Emeka K.",
-      text: "Joining Philik's career development program was the best decision I made. The networking opportunities are amazing!",
+      name: "Rodhiat Muhammad",
+      level: "100L",
+      school: "Medicine, Unilag",
+      text: "This speaker is incredible! I have so much to learn, and I’m glad I joined early in my academic journey. Philik is truly shaping future leaders!",
     },
     {
-      name: "Amina L.",
-      text: "Philik helped me transition from university to the job market with confidence!",
+      name: "Dr. Muhammad Awwal",
+      level: "Medical Intern",
+      school: "General Hospital, Ilorin",
+      text: "Philik has introduced me to great minds and fresh perspectives. The sessions have been a wake-up call for me to set long-term goals and maximize my internship and NYSC years. I now have a clearer vision for my career path!",
+    },
+    {
+      name: "Rumaysoh",
+      level: "400L",
+      school: "Biochemistry, Unilorin",
+      text: "I’ve always struggled with discipline, and I was beginning to feel stuck. Philik has given me the push I need, and I’d love to learn more strategies to stay consistent. Thank you for fostering a growth-driven community!",
     },
   ];
 
@@ -75,7 +89,7 @@ const FAQReviewSection = () => {
 
         {/* Reviews Section */}
         <div>
-          <h2 className="text-3xl font-bold text-center mb-6">What People Are Saying</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">What People Are Saying About Philik</h2>
           <div className="overflow-hidden relative">
             <div className="review-marquee flex gap-8">
               {reviews.map((review, index) => (
@@ -84,7 +98,7 @@ const FAQReviewSection = () => {
                   className="bg-white p-8 shadow-lg rounded-xl w-[350px] min-w-[350px] flex-shrink-0"
                 >
                   <p className="text-gray-700 italic">"{review.text}"</p>
-                  <p className="text-right font-semibold mt-4">— {review.name}</p>
+                  <p className="text-right font-semibold mt-4">— {review.name}, {review.level}, {review.school}</p>
                 </div>
               ))}
             </div>
@@ -96,7 +110,7 @@ const FAQReviewSection = () => {
       <style jsx>{`
         .review-marquee {
           display: flex;
-          animation: scroll 10s linear infinite;
+          animation: scroll 35s linear infinite;
         }
 
         @keyframes scroll {

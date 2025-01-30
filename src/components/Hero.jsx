@@ -2,6 +2,7 @@ import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import pic from '../Assets/Images/herot.png';
 import pic2 from '../Assets/Images/hero-2.png';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -9,7 +10,8 @@ const Hero = () => {
       {/* 1st Section */}
       <div className="w-full lg:w-[551px] flex flex-col p-5">
         {/* Tagline */}
-        <div className="flex gap-[10px] p-[10px] cursor-not-allowed bg-[#ddf8f5] w-full max-w-[320px] h-[46px] rounded-[32px] justify-center items-center">
+        <Link to='https://www.youtube.com/watch?v=z0LxaArBvk8'>
+        <div className="flex gap-[10px] p-[10px] cursor-pointer bg-[#ddf8f5] w-full max-w-[320px] h-[46px] rounded-[32px] justify-center items-center">
           <div className="flex  items-center justify-center w-[48px] h-[32px] text-black bg-white p-3 rounded-full">
             New
           </div>
@@ -19,10 +21,11 @@ const Hero = () => {
             <FaArrowRight />
           </div>
         </div>
+        </Link>
         {/* Heading and Description */}
         <div className=" mt-[2px] md:mt-5  ">
           <h1 className="text-[36px] md:text-[40px] lg:text-[54px] font-bold text-black">
-            Balance Academics. Amplify Passions.
+          Maintain Balance with excellence. Build your future.
           </h1>
           <p className="text-[14px] md:text-[16px] font-medium text-[#737373] mt-4">
             Join a program designed to help students excel academically while pursuing what they love.

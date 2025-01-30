@@ -5,6 +5,7 @@ import img2 from '../Assets/Images/ah2.png';
 import img3 from '../Assets/Images/am2.png';
 import img4 from '../Assets/Images/is2.png';
 import img5 from '../Assets/Images/ts2.png';
+import img6 from '../Assets/Images/sm2.png';
 
 const TeamMembers = () => {
   // Array of team members
@@ -49,6 +50,15 @@ const TeamMembers = () => {
       linkedin: 'https://www.linkedin.com/in/teslimadegbegha', // Replace with actual LinkedIn URL
       twitter: 'https://twitter.com/teslimadegbegha' // Replace with actual Twitter URL
     },
+    {
+      name: 'Samuel Lawal',
+      role: 'UI/UX',
+      description: 'Designing intuitive and user-friendly experiences that enhance Philik’s outreach programs, ensuring impactful engagement with the audience.',
+      image: img6,
+      linkedin: 'https://www.linkedin.com/in/teslimadegbegha', // Replace with actual LinkedIn URL
+      twitter: 'https://twitter.com/teslimadegbegha' // Replace with actual Twitter URL
+    }
+    
   ];
 
   return (

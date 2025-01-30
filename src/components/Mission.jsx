@@ -13,10 +13,10 @@ const Mission = () => {
         {/* Purpose 1 */}
         <div className="border-b-[1px] sm:border-b-0 sm:border-r-[1px] border-[#F7AC51] sm:pr-[20px] pb-6 sm:pb-0">
           <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-semibold text-[#F7AC51] mb-4">
-            Our Purpose
+            Our Mission
           </h2>
           <p className="text-[16px] sm:text-[18px] md:text-[24px] font-normal text-black">
-            “To democratize education by offering innovative, affordable, and accessible solutions that empower students to achieve their dreams.”
+            “Connecting students to the opportunities that matter most , turning thier skills and passion into pathways for success”
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const Mission = () => {
             Our Vision
           </h2>
           <p className="text-[16px] sm:text-[18px] md:text-[24px] font-normal text-black">
-            “To inspire a generation of lifelong learners and changemakers, fostering innovation and creativity through education.”
+            “To be the ultimate hub where students find the right opportunities , at the right time , to unlock their true potential ”
           </p>
         </div>
       </div>

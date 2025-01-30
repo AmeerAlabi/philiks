@@ -13,7 +13,7 @@ const Events = () => {
       date: "January 27, 2024",
       location: "Remote(Zoom)",
       description: "Showcase how Philik connects students to opportunities that align with their goals.",
-      link: "https://youtube.com/event-recap-1",
+      link: "https://www.youtube.com/@Philikopportunnites",
       flyer: img1,
     },
     {
@@ -22,7 +22,7 @@ const Events = () => {
       date: "January 28, 2024",
       location: "Remote(Zoom)",
       description: "Introduce the importance of balancing both aspects for holistic development.",
-      link: "https://youtube.com/event-recap-1",
+      link: "https://www.youtube.com/@Philikopportunnites",
       flyer: img2,
     },
     {
@@ -31,7 +31,7 @@ const Events = () => {
       date: "January 29, 2024",
       location: "Remote(Zoom)",
       description: "Teach practical time-management techniques, including prioritization, planning, and goal-setting.",
-      link: "https://example.com/event-recap-2",
+      link: "https://www.youtube.com/@Philikopportunnites",
       flyer: img3,
     },
   ];

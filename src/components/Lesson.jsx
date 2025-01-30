@@ -10,14 +10,14 @@ const Lessons = () => {
       image: lessonImage1,
       title: 'Time Management Strategies:',
       buttonText: 'View',
-      link: '', // The link for this lesson's detail page
+      link: 'https://www.youtube.com/watch?v=HmF_WYl1pQ8', // The link for this lesson's detail page
       isButtonDisabled: false,
     },
     {
       image: lessonImage1,
       title: 'Understanding Balance',
       buttonText: 'View',
-      link: '', // The link for this lesson's detail page
+      link: 'https://www.youtube.com/watch?v=HmF_WYl1pQ8', // The link for this lesson's detail page
       isButtonDisabled: false,
     },
     // Add more lesson cards here as needed

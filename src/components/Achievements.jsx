@@ -1,37 +1,39 @@
 import React from 'react';
-import { FaAward, FaUsers, FaRegLightbulb } from 'react-icons/fa';  // Importing icons for achievements
+import { FaAward, FaUsers, FaRegLightbulb } from 'react-icons/fa'; // Importing icons for achievements
 
 const Achievements = () => {
   const achievements = [
     {
-      icon: <FaUsers size={40} color="#4CAF50" />,
-      title: 'Philik Organizes Outreach for Over 100 Students',
-      description: 'Philik successfully conducted an outreach program aimed at empowering and guiding over 100 students towards career readiness and personal development.',
+      icon: <FaUsers size={40} className="text-green-500" />,
+      title: 'Empowering 100+ Students Through Outreach',
+      description: 'Philik successfully organized an outreach program, equipping over 100 students with essential career and personal development skills.',
     },
     {
-      icon: <FaAward size={40} color="#FF9800" />,
-      title: 'Philik Organizes Webinar for Over 100 Individuals',
-      description: 'A well-attended webinar with over 100 participants, including undergraduates and professionals, focused on career growth and skill development.',
+      icon: <FaAward size={40} className="text-orange-500" />,
+      title: 'Impactful Webinar for 100+ Participants',
+      description: 'A highly engaging webinar attended by students and professionals, focusing on career growth and skill development.',
     },
     {
-      icon: <FaRegLightbulb size={40} color="#3F51B5" />,
-      title: 'Philik Launched on January 21st, 2025 in Collaboration with Mission:Brain',
-      description: 'A successful launch in collaboration with Mission:Brain, where Philik also received the Academic Leadership Award from Unilorin for outstanding contributions to education.',
+      icon: <FaRegLightbulb size={40} className="text-blue-600" />,
+      title: 'International Recognition for Academic Leadership',
+      description: 'Philik, in collaboration with Mission:Brain Unilorin, received an international Academic Leadership Award for significant contributions in education and mentorship.',
     },
   ];
 
   return (
-    <div className="p-6 min-h-screen bg-gray-100">
-      <h2 className="text-4xl font-bold text-black text-center mb-8">Achievements</h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="p-8 min-h-screen bg-gray-50">
+      <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">Our Achievements</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {achievements.map((achievement, index) => (
-          <div key={index} className="bg-white p-6 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300">
+          <div
+            key={index}
+            className="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300"
+          >
             <div className="flex items-center gap-4 mb-4">
               {achievement.icon}
-              <h3 className="text-2xl font-semibold">{achievement.title}</h3>
+              <h3 className="text-2xl font-semibold text-gray-800">{achievement.title}</h3>
             </div>
-            <p className="text-lg text-gray-700">{achievement.description}</p>
+            <p className="text-lg text-gray-700 leading-relaxed">{achievement.description}</p>
           </div>
         ))}
       </div>

@@ -3,6 +3,7 @@ import icon1 from '../Assets/Images/ngm1.png';
 import icon2 from '../Assets/Images/ngm2.png';
 import icon3 from '../Assets/Images/mission.png';
 import icon4 from '../Assets/Images/ace.png';
+import icon5 from '../Assets/Images/yl.jpg';
 
 const Uni = () => {
   return (
@@ -26,6 +27,9 @@ const Uni = () => {
           </a>
           <a href="https://acemyx.com/" target="_blank" rel="noopener noreferrer">
             <img src={icon4} alt="Partner 4" className="w-[120px] h-[120px] object-contain transition-transform hover:scale-110" />
+          </a>
+          <a href="https://acemyx.com/" target="_blank" rel="noopener noreferrer">
+            <img src={icon5} alt="Partner 4" className="w-[120px] h-[120px] object-contain transition-transform hover:scale-110" />
           </a>
         </div>
       </div>
