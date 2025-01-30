@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const LessonCard = ({ image, title, buttonText, onButtonClick, isButtonDisabled = false }) => {
+const LessonCard = ({ image, title, buttonText, link }) => {
   return (
     <div className="w-full md:w-[400px] p-6 flex flex-col items-center gap-4 bg-white shadow-lg rounded-2xl border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
       {/* Image */}
@@ -11,23 +10,20 @@ const LessonCard = ({ image, title, buttonText, onButtonClick, isButtonDisabled 
       <div className="flex flex-col items-center gap-4">
         <p className="text-[18px] text-black text-center font-medium">{title}</p>
 
-        {/* Description or additional text about the button */}
+        {/* Description */}
         <p className="text-sm text-gray-600 text-center">
-          Learn more about this lesson and its details by clicking the button below.
+          Learn more about this lesson by clicking the button below.
         </p>
 
         {/* Button */}
-        <Link to="/programs">
-          <button
-            className={`w-[100px] rounded-full h-[35px] text-white ${
-              isButtonDisabled ? 'bg-black cursor-pointer' : 'bg-black hover:bg-gray-800'
-            }`}
-            onClick={onButtonClick}
-            disabled={isButtonDisabled}
-          >
-            {buttonText}
-          </button>
-        </Link>
+        <a 
+          href={link} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="w-[100px] rounded-full h-[35px] bg-black text-white flex items-center justify-center hover:bg-gray-800 transition"
+        >
+          {buttonText}
+        </a>
       </div>
     </div>
   );
