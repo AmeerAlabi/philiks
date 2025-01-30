@@ -28,6 +28,8 @@ const Prog = () => {
         'Mentorship from industry experts',
         'Foundational skill-building modules',
       ],
+      comingSoon: true, // Flag for "Coming Soon" badge
+
     },
     {
       title: 'Philik Campus Initiative',
